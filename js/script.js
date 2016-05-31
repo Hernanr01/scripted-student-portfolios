@@ -8,7 +8,14 @@ $(document).ready(function() {
   }).mouseleave(function(){
     audio.pause();
   });
+ 
+ var Fetty = new Audio('audio/Fetty Wap - RGF Island [Audio Only].mp3');
 
+  $('#Johan_Pena').mouseenter(function() {
+    Fetty.play();
+  }).mouseleave(function(){
+    Fetty.pause();
+  });
   // Anais Perez's Javascript
 
 
@@ -43,7 +50,11 @@ $(document).ready(function() {
 
 
   // Prince Warner's Javascript
-
+  $('#prince-warner').mouseenter(function() {
+    document.body.style.backgroundColor = "black";
+  }) .mouseleave(function(){
+     document.body.style.backgroundColor = "white";
+  });
 
   // Roberto Roman's Javascript
 
